@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activity.UpdateProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp"
+            android:textColor="@color/purple"
+            android:layout_centerInParent="true"
+            android:text="Update Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_below="@id/rlToolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civProfileImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+             />
+
+            <ImageView
+                android:id="@+id/ivUploadImage"
+                android:background="@drawable/upload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ivCancelImage"
+                android:background="@drawable/ic_cancel"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+        </RelativeLayout>
+
+
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:inputType="textPersonName"
+            android:hint="First Name"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18sp"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_rounded_bg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:inputType="textPersonName"
+            android:hint="Last Name"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18sp"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_rounded_bg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+
+
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:inputType="number"
+            android:hint="Phone"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18sp"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_rounded_bg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvMale"
+                android:gravity="center"
+                android:text="MALE"
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/selected_gender_bg"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="55dp"/>
+
+
+            <TextView
+                android:id="@+id/tvFemale"
+                android:gravity="center"
+                android:text="FEMALE"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginStart="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/not_selected_gender_bg"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="55dp"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <CheckBox
+                android:id="@+id/cbEmployee"
+                android:fontFamily="@font/montserrat"
+                android:textSize="18sp"
+                android:text="EMPLOYEE"
+                android:textColor="@color/purple"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/cbParent"
+                android:fontFamily="@font/montserrat"
+                android:textSize="18sp"
+                android:text="PARENT"
+                android:textColor="@color/purple"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:text="Update"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple"
+            app:cornerRadius="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

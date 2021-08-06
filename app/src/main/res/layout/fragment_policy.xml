@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/edit_text_rounded_bg"
+    tools:context=".Fragment.PolicyFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="POLICY"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:text="Digital Eye Student Security is committed to respecting the personal privacy of people who visit this web site. This section summarizes the privacy policy and practices Digital Eye Student Security."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="SECURITY"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:text="Digital Eye Student Security does not automatically gather any personal information-such as your name, phone number, email address, or street address-when you visit our web site. This type of information is obtained only when you yourself submit it in person, email, facsimile, or by phone.
+Whenever Digital Eye Student Security conducts online transactions on your behalf, 128-bit SSL encryption (secure socket layer) is used to encode your information and protect its confidentiality while it is in transit.\n
+Any information you provide is disclosed only to officials who need it to process your transaction. We do not create individual profiles from the information that users provide. As well, we do not disclose the information to any party inside or outside Digital Eye Student Security unless authorized by law.
+All personal information you provide is protected under the federal Privacy Act (PIPEDA).\n
+If you have any questions or comments about Digital Eye Student Security privacy policies and practices, or if you are not satisfied that we have adequately respected your privacy, you are encouraged to contact Digital Eye Student Security directly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</FrameLayout>

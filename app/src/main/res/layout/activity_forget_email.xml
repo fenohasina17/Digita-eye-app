@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activity.ForgetEmailActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="ENTER EMAIL"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/purple"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_below="@id/tvHeading"
+            android:id="@+id/tvSubHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="ENTER YOUR EMAIL ADDRESS TO CONTINUE"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:text=""
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="18sp"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/white"
+                android:background="@drawable/edit_text_rounded_bg"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSendCode"
+                android:text="SEND CODE"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/purple"
+                app:cornerRadius="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

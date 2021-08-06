@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="50dp"
+    android:paddingEnd="50dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SuccessActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/headingSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Success !"
+        android:fontFamily="@font/montserrat"
+        android:textSize="30sp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headingSuccess"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Your account has been created"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/imgTick"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/tasks"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:text="SIGN IN"
+        android:textStyle="bold"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple"
+        app:cornerRadius="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="220dp"
+        android:layout_height="65dp"/>
+
+</RelativeLayout>
